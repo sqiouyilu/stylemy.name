@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<ntml lang="en">
+<head>
+	<title>STYLE MY NAME | coming soon</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	 <meta charset="UTF-8">
+	
+	<!-- Favicons -->
+	<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+	<link rel="manifest" href="/site.webmanifest">
+	<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+	<meta name="msapplication-TileColor" content="#da532c">
+	<meta name="theme-color" content="#b78da1">
+	
+	<!-- Fonts -->
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Libre+Baskerville:regular,italic|Mr+Bedfort">
+	
+	<!-- Styling -->
+	<style>
+	:root {
+
+		/* colors */
+
+		--sweet-lavender: #b78da1ff;
+		--translucent-lavender: #b78da133;
+		--the-void: #241e20ff;
+		--the-translucent-void: #241e2033;
+		--heather-grey: #e1dbe3ff;
+		--twilight-sea: #556876ff;
+		--deep-woods: #493212ff;
+		
+		--lavender-filter: invert(63%) sepia(11%) saturate(814%) hue-rotate(279deg) brightness(95%) contrast(81%);
+		--github-black: invert(6%) sepia(2%) saturate(7499%) hue-rotate(294deg) brightness(97%) contrast(86%);
+		--unbranded-blue: invert(39%) sepia(17%) saturate(504%) hue-rotate(163deg) brightness(95%) contrast(92%);
+		--twitter-blue: invert(61%) sepia(87%) saturate(3833%) hue-rotate(179deg) brightness(97%) contrast(94%);
+
+		/* icons */
+		
+		--name: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 384 512'%3E%3C!--! Font Awesome Pro 6.2.1 by %40fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons  Inc. --%3E%3Cpath d='M64 0C28.7 0 0 28.7 0 64V448c0 35.3 28.7 64 64 64H320c35.3 0 64-28.7 64-64V64c0-35.3-28.7-64-64-64H64zm96 320h64c44.2 0 80 35.8 80 80c0 8.8-7.2 16-16 16H96c-8.8 0-16-7.2-16-16c0-44.2 35.8-80 80-80zm96-96c0 35.3-28.7 64-64 64s-64-28.7-64-64s28.7-64 64-64s64 28.7 64 64zM144 64h96c8.8 0 16 7.2 16 16s-7.2 16-16 16H144c-8.8 0-16-7.2-16-16s7.2-16 16-16z'/%3E%3C/svg%3E");
+		
+		--github: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 496 512'%3E%3C!--! Font Awesome Pro 6.2.1 by %40fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons  Inc. --%3E%3Cpath d='M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z'/%3E%3C/svg%3E");
+	
+	--twitter: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 512 512'%3E%3C!--! Font Awesome Pro 6.2.1 by %40fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons  Inc. --%3E%3Cpath d='M459.37 151.716c.325 4.548.325 9.097.325 13.645 0 138.72-105.583 298.558-298.558 298.558-59.452 0-114.68-17.219-161.137-47.106 8.447.974 16.568 1.299 25.34 1.299 49.055 0 94.213-16.568 130.274-44.832-46.132-.975-84.792-31.188-98.112-72.772 6.498.974 12.995 1.624 19.818 1.624 9.421 0 18.843-1.3 27.614-3.573-48.081-9.747-84.143-51.98-84.143-102.985v-1.299c13.969 7.797 30.214 12.67 47.431 13.319-28.264-18.843-46.781-51.005-46.781-87.391 0-19.492 5.197-37.36 14.294-52.954 51.655 63.675 129.3 105.258 216.365 109.807-1.624-7.797-2.599-15.918-2.599-24.04 0-57.828 46.782-104.934 104.934-104.934 30.213 0 57.502 12.67 76.67 33.137 23.715-4.548 46.456-13.32 66.599-25.34-7.798 24.366-24.366 44.833-46.132 57.827 21.117-2.273 41.584-8.122 60.426-16.243-14.292 20.791-32.161 39.308-52.628 54.253z'/%3E%3C/svg%3E");
+	
+	--tweet: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 640 512'%3E%3C!--! Font Awesome Pro 6.2.1 by %40fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons  Inc. --%3E%3Cpath d='M208 352c114.9 0 208-78.8 208-176S322.9 0 208 0S0 78.8 0 176c0 38.6 14.7 74.3 39.6 103.4c-3.5 9.4-8.7 17.7-14.2 24.7c-4.8 6.2-9.7 11-13.3 14.3c-1.8 1.6-3.3 2.9-4.3 3.7c-.5 .4-.9 .7-1.1 .8l-.2 .2 0 0 0 0C1 327.2-1.4 334.4 .8 340.9S9.1 352 16 352c21.8 0 43.8-5.6 62.1-12.5c9.2-3.5 17.8-7.4 25.3-11.4C134.1 343.3 169.8 352 208 352zM448 176c0 112.3-99.1 196.9-216.5 207C255.8 457.4 336.4 512 432 512c38.2 0 73.9-8.7 104.7-23.9c7.5 4 16 7.9 25.2 11.4c18.3 6.9 40.3 12.5 62.1 12.5c6.9 0 13.1-4.5 15.2-11.1c2.1-6.6-.2-13.8-5.8-17.9l0 0 0 0-.2-.2c-.2-.2-.6-.4-1.1-.8c-1-.8-2.5-2-4.3-3.7c-3.6-3.3-8.5-8.1-13.3-14.3c-5.5-7-10.7-15.4-14.2-24.7c24.9-29 39.6-64.7 39.6-103.4c0-92.8-84.9-168.9-192.6-175.5c.4 5.1 .6 10.3 .6 15.5z'/%3E%3C/svg%3E");
+	}
+	
+	/* styling */
+	
+	body {
+		font: 0.9em/1.7em 'Libre Baskerville', serif;
+		background-color: var(--twilight-sea);
+		color: var(--the-void);
+		margin: 0;
+	}
+	
+	a {
+		transition: all 0.5s ease-in-out;
+		color: var(--twilight-sea);
+		border-bottom: 1px solid currentcolor;
+		text-decoration: none;
+	}
+	
+	a:hover,
+	a:focus {
+		color: var(--deep-woods);
+	}
+		
+	header {
+		text-align: center;
+	}
+	
+	header h1 {
+		font-family: 'Mr Bedfort', serif;
+		color: var(--twilight-sea);
+		font-size: 4em;
+		line-height: 1em;
+		margin: 1em auto 0.5em auto;
+	}
+	
+	header h2 {
+		color: var(--sweet-lavender);
+		font-size: 1.2em;
+		font-weight: normal;
+		font-style: italic;
+		margin: 2em auto;
+		width: 80%;
+	}
+	
+	main {
+		box-sizing: border-box;
+		background-color: var(--heather-grey);
+		max-width: 100%;
+		margin: 100px 25px 50px 25px;
+		padding: 1.5em;
+		box-shadow: 15px 15px var(--the-translucent-void);
+		border-radius: 5px;
+	}
+	
+	mark {
+		background-color: var(--translucent-lavender);
+	}
+	
+	.badge-soon {
+		background-color: var(--deep-woods);
+		padding: 3px 5px;
+		color: var(--heather-grey);
+		border-radius: 5px;
+		margin: 0 0.4em 0 0;
+		font-family: sans-serif;
+	}
+	
+	.github, .twitter, .tweet, .name {
+		filter: var(--lavender-filter);
+		width: 1em;
+		height: 1em;
+		display: inline-block;
+		background-size: 1em;
+		background: no-repeat left center;
+		margin-bottom: -2px;
+	}
+	
+	.name {
+		background: var(--name);
+		width: 0.8em;
+	}
+	
+	.github {
+		background: var(--github);
+	}
+	
+	.twitter {
+		background: var(--twitter);
+	}
+	
+	.tweet {
+		background: var(--tweet);
+		height: 0.8em;
+		margin-bottom: 0px;
+	}
+	
+	nav a:hover .github,
+	nav a:focus .github {
+		filter: var(--github-black);
+	}
+	
+	nav a:hover .twitter,
+	nav a:focus .twitter {
+		filter: var(--twitter-blue);
+	}
+	
+	nav a:hover .tweet,
+	nav a:focus .tweet,
+	nav a:hover .name,
+	nav a:focus .name {
+		filter: var(--unbranded-blue);
+	}
+	
+	aside p {
+		font-size: 0.9em;
+		line-height: 1.7em;
+		text-align: left;
+	}
+	
+	code {
+		font: 1.2em/1.2em monospace;
+	}
+	
+	nav {
+		display: flex;
+		flex-direction: column;
+		margin: 2em auto;
+	}
+	
+	nav a {
+		box-sizing: border-box;
+		width: 100%;
+		font-family: sans-serif;
+		transition: all 0.5s ease-in-out;
+		color: var(--sweet-lavender);
+		padding: 0.5em;
+		margin: 0.5em auto;
+		text-decoration: none;
+		text-align: center;
+		font-weight: bold;
+		border-radius: 50px;
+		border: 2px solid currentcolor;
+		box-shadow: 6px 8px var(--heather-grey);
+	}
+	
+	nav a:hover {
+		color: var(--deep-woods);
+		box-shadow: 6px 8px var(--the-translucent-void);
+	}
+	
+	footer {
+		color: var(--heather-grey);
+		max-width: 100%;
+		margin: 2em auto 6em auto;
+		padding: 5px;
+		font: 0.6em/1 sans-serif;
+		text-transform: uppercase;
+	}
+	
+	footer p {
+		text-align: center;
+	}
+	
+	footer a {
+		color: currentcolor;
+	}
+	
+	footer a:hover {
+		color: #690000;
+		text-decoration: none;
+	}
+	
+	/* responsive adjustments */
+	
+	@media screen and (min-width: 800px) {
+		body {
+			font-size: 1em;
+		}
+		
+		main {
+			max-width: 700px;
+			margin: 4em auto 2em auto;
+			padding: 3em 5em 4em 5em;
+		}
+		
+		nav a {
+			width: 75%;
+		}
+		
+		header h2 {
+			width: 50%;
+		}
+		
+		nav a {
+			padding: 0.5em 2em;
+		}
+	}
+	</style>
+</head>
+<body>
+
+<!-- Launchpad -->
+<main>
+
+	<!-- Header -->
+	<header>
+		<h1>style my name</h1>
+		<h2>a name usage notes generator disguised as a game</h2>
+	</header>
+
+	<!-- Description -->
+	<aside>
+		<p><strong class="badge-soon">Coming soon:</strong> <a href="/">stylemy.name</a>, an interactive game where an Archivist of Names asks you how to record your name into their stack.</p>
+		<p>At the end, the Archivist says, <mark>“This is what you’ve told me about your name:”</mark> and outputs all the text you typed in, then asks, <mark>“Is that correct?”</mark>
+		<p>From there, you will be able to revise answers and regenerate the page, or say <mark>“Yes”</mark> and download your response, which will be available in <code>txt</code>, <code>html</code>, <code>pdf</code>, <code>epub</code>, <code>rtf</code>, and <code>docx</code> formats. You can post your response to your site or save it for your own reference.</p>
+	</aside>
+
+	<!-- Links -->
+	<nav>
+		<a href="https://s.qiouyi.lu/press-kit" target="_new"><span class="name"></span> Sample name guide: S. Qiouyi Lu</a>
+		<a href="https://gretchenmcculloch.com/name/" target="_new"><span class="name"></span> Sample name guide: Gretchen McCulloch</a>
+		<a href="https://github.com/sqiouyilu/stylemy.name" target="_new"><span class="github"></span> Follow stylemy.name on Github</a>
+		<a href="https://twitter.com/sqiouyilu" target="_new"><span class="twitter"></span> Follow @sqiouyilu</a>
+		<a href="https://twitter.com/sqiouyilu/status/1596956124368240640" target="_new"><span class="tweet"></span> Originating Tweet</a>
+	</nav>
+</main>
+
+<!-- Attribution -->
+<footer>
+	<p>Theme by <a href="https://s.qiouyi.lu/LaunchpadThemes" target="_new">S. Qiouyi Lu</a></p>
+	<!-- Revised November 3, 2022 / Adapted November 28, 2022 -->
+</footer>
+</body>
+</html>
